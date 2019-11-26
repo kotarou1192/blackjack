@@ -35,8 +35,10 @@ public class Play {
             System.out.println("バースト！ディーラーの負けです");
         }else if(ScoreOfPlayer > ScoreOfDealer){
             System.out.println("あなたの勝ちです！");
-        }else{
+        }else if(ScoreOfDealer > ScoreOfPlayer){
             System.out.println("あなたの負けです");
+        } else{
+            System.out.println("引き分け");
         }
     }
 
